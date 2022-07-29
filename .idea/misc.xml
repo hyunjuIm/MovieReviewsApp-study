@@ -5,10 +5,14 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_people.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/shape_review_content.xml" value="0.1805" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/fragment_movie_reviews.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/item_featured_movie.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/item_movie_infromation.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/item_review.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.321875" />
       </map>
     </option>

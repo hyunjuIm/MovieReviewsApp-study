@@ -32,5 +32,11 @@
         android:id="@+id/movie_reviews_dest"
         android:name="com.hyunju.movieapp.presentation.reviews.MovieReviewsFragment"
         android:label="영화 상세"
-        tools:layout="@layout/fragment_movie_reviews" />
+        tools:layout="@layout/fragment_movie_reviews">
+
+        <argument
+            android:name="movie"
+            app:argType="com.hyunju.movieapp.domain.model.Movie" />
+
+    </fragment>
 </navigation>
