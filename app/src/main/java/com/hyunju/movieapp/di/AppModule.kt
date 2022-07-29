@@ -8,10 +8,7 @@ import com.hyunju.movieapp.data.preference.PreferenceManager
 import com.hyunju.movieapp.data.preference.SharedPreferenceManager
 import com.hyunju.movieapp.data.repository.*
 import com.hyunju.movieapp.domain.model.Movie
-import com.hyunju.movieapp.domain.usecase.GetAllMoviesUseCase
-import com.hyunju.movieapp.domain.usecase.GetAllMovieReviewsUseCase
-import com.hyunju.movieapp.domain.usecase.GetMyReviewedMoviesUseCase
-import com.hyunju.movieapp.domain.usecase.GetRandomFeaturedMovieUseCase
+import com.hyunju.movieapp.domain.usecase.*
 import com.hyunju.movieapp.presentation.home.HomeContract
 import com.hyunju.movieapp.presentation.home.HomeFragment
 import com.hyunju.movieapp.presentation.home.HomePresenter
@@ -47,8 +44,10 @@ val dataModule = module {
 val domainModule = module {
     factory { GetRandomFeaturedMovieUseCase(get(), get()) }
     factory { GetAllMoviesUseCase(get()) }
+    factory { GetAllMovieReviewsUseCase(get(), get()) }
     factory { GetMyReviewedMoviesUseCase(get(), get(), get()) }
-    factory { GetAllMovieReviewsUseCase(get()) }
+    factory { SubmitReviewUseCase(get(), get()) }
+    factory { DeleteReviewUseCase(get()) }
 }
 
 val presenterModule = module {
@@ -57,7 +56,7 @@ val presenterModule = module {
     }
     scope<MovieReviewsFragment> {
         scoped<MovieReviewsContract.Presenter> { (movie: Movie) ->
-            MovieReviewsPresenter(movie, getSource(), get())
+            MovieReviewsPresenter(movie, getSource(), get(), get(), get())
         }
     }
     scope<MyPageFragment> {

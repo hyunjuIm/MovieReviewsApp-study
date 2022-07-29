@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_people.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/shape_review_content.xml" value="0.1805" />
@@ -13,7 +14,10 @@
         <entry key="app/src/main/res/layout/item_featured_movie.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/item_movie_infromation.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/item_my_review.xml" value="0.3746958637469586" />
         <entry key="app/src/main/res/layout/item_review.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/item_review_form.xml" value="0.27717391304347827" />
+        <entry key="app/src/main/res/layout/item_review_result.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/item_reviewed_movie.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.321875" />
       </map>
