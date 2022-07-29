@@ -12,6 +12,9 @@ import com.hyunju.movieapp.data.repository.ReviewRepository
 import com.hyunju.movieapp.data.repository.ReviewRepositoryImpl
 import com.hyunju.movieapp.domain.usecase.GetAllMoviesUseCase
 import com.hyunju.movieapp.domain.usecase.GetRandomFeaturedMovieUseCase
+import com.hyunju.movieapp.presentation.home.HomeContract
+import com.hyunju.movieapp.presentation.home.HomeFragment
+import com.hyunju.movieapp.presentation.home.HomePresenter
 import kotlinx.coroutines.Dispatchers
 import org.koin.dsl.module
 
@@ -35,4 +38,7 @@ val domainModule = module {
 }
 
 val presenterModule = module {
+    scope<HomeFragment> {
+        scoped<HomeContract.Presenter> { HomePresenter(getSource(), get(), get()) }
+    }
 }
