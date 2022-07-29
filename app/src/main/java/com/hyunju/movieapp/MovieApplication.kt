@@ -1,4 +1,4 @@
-package com.hyunju
+package com.hyunju.movieapp
 
 import android.app.Application
 import com.hyunju.movieapp.di.appModule

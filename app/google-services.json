@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071113511881",
+    "project_id": "movie-review-app-b473f",
+    "storage_bucket": "movie-review-app-b473f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071113511881:android:973e59475c54bef6683e18",
+        "android_client_info": {
+          "package_name": "com.hyunju.movieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071113511881-11su4sm9a7mn52c1j9pntin9eskqca25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ064ZHZgMw28Vcp5_A9MqYu5rUQD1V5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071113511881-11su4sm9a7mn52c1j9pntin9eskqca25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
