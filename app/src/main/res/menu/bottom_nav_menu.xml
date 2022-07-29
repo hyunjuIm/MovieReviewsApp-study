@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_dest"
+        android:icon="@drawable/ic_movie"
+        android:title="영화" />
+
+    <item
+        android:id="@+id/my_page_dest"
+        android:icon="@drawable/ic_dashboard"
+        android:title="내 리뷰" />
+
+</menu>
