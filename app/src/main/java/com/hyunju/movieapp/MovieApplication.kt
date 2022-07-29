@@ -2,6 +2,9 @@ package com.hyunju.movieapp
 
 import android.app.Application
 import com.hyunju.movieapp.di.appModule
+import com.hyunju.movieapp.di.dataModule
+import com.hyunju.movieapp.di.domainModule
+import com.hyunju.movieapp.di.presenterModule
 import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -21,7 +24,7 @@ class MovieApplication : Application() {
                 }
             )
             androidContext(this@MovieApplication)
-            modules(appModule)
+            modules(appModule + dataModule + domainModule + presenterModule)
         }
     }
 }
