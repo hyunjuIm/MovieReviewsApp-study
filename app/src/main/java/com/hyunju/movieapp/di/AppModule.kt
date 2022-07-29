@@ -11,6 +11,7 @@ import com.hyunju.movieapp.data.repository.MovieRepositoryImpl
 import com.hyunju.movieapp.data.repository.ReviewRepository
 import com.hyunju.movieapp.data.repository.ReviewRepositoryImpl
 import com.hyunju.movieapp.domain.usecase.GetAllMoviesUseCase
+import com.hyunju.movieapp.domain.usecase.GetAllReviewsUseCase
 import com.hyunju.movieapp.domain.usecase.GetRandomFeaturedMovieUseCase
 import com.hyunju.movieapp.presentation.home.HomeContract
 import com.hyunju.movieapp.presentation.home.HomeFragment
@@ -35,6 +36,7 @@ val dataModule = module {
 val domainModule = module {
     factory { GetRandomFeaturedMovieUseCase(get(), get()) }
     factory { GetAllMoviesUseCase(get()) }
+    factory { GetAllReviewsUseCase(get()) }
 }
 
 val presenterModule = module {
